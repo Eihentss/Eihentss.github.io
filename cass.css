@@ -72,9 +72,7 @@ input {
 nav{
     cursor: pointer;
 }
-input:hover {
-    cursor: pointer;
-}
+
 @media (max-width: 400px) {
     img{
         display: block;

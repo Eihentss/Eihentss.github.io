@@ -16,18 +16,40 @@
                 <li><a href="index.html">Sākums</a></li>
                 <li><a href="darbi.html">Darbi</a></li>
                 <li><a href="Kontakti.html">Kontakti</a></li>
-                <li><a href="navbars.html">navbar</a></li>
             </ul>
+
         </nav>
 
-        <div class="social">
-            <a href="https://www.instagram.com/eihents/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/ricards.eihentals/?locale=lv_LV" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.tiktok.com/@eihent" target="_blank"><i class="fab fa-tiktok"></i></a>
-        </div>
-
-        <div class="numurs">
-            Num: +371-251-515-11
+        <div class="contact" id="contact">
+            <div class="form__container">
+              <h2
+                style="
+                  color: white;
+                  margin-bottom: 1rem;
+                  text-align: center;
+                  font-size: 2rem;
+                ">
+                Contact me
+              </h2>
+              <form
+                id="contact-form"
+                method="post"
+                action="https://getform.io/f/a7aad0fd-c781-4a22-883d-76ffa1e31a78">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+              </form>
+            </div>
         </div>
     </div>
 </body>
