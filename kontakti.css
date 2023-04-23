@@ -1,0 +1,178 @@
+body{
+    background-color: #7f8daa;  
+    width: 100%;
+    background-size: cover;
+
+        overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: #7f8daa;
+    width: 100vw;
+    z-index: 10;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+
+}
+a:hover{
+    color: rgb(9, 10, 9);
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: rgb(0, 255, 42);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+.detel{
+    width: 1000px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+img {
+    display: none;
+}
+.check {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 42px;
+    height: 42px;
+    opacity: 0.0;
+    z-index: 10;
+}
+.close{
+    transform: scale(0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 400px) {
+    img{
+        display: block;
+    }
+    ul{
+        position: absolute;
+        top: 40px;
+        left: 400px;
+        background-color: rgba(0, 0, 0, 0.315);
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        height: 100px;
+        align-items: center;
+        transition: left 0.8s;
+    }
+        
+    .check:checked ~ .close{
+        transform: scale(1) rotate(180deg);
+    }   
+    .menu{
+        transform: scale(1);
+        transition: transform 0.5s;
+    }
+
+    .check:checked ~ .menu{
+        transform: scale(0) rotate(180deg);
+    }
+    
+    .check:checked + ul{
+        top:40px;
+        left: 0;
+    }
+
+    .check {
+        display: block;
+    }
+}
+
+span{
+    color: rgb(32, 75, 192);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+
+ 
+.form__container {
+    display:flex;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #7a7575;
+    border-radius: 20px;
+
+  }
+  
+  .form-group {
+    display: flex;
+    
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  input,textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: black;
+  }
+  
+  textarea {
+    height: 150px;
+    width: 650px;
+  }
+  
+  #contact-form > button {
+    width: 100%;
+    height: 50px;
+    background-color: #7a7575;
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  #contact-form > button:hover {
+    background-color: #1a17189f;
+  }
+  
+

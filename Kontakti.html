@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ričards Eihentāls</title>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="kontakti.css">
 </head>
 <body>
     <header>
         <nav>
-            <input type="checkbox" class="mans" />
+            <input type="checkbox" class="check"/>
             <ul>
                 <li><a href="index.html">Sākums</a></li>
                 <li><a href="darbi.html">Darbi</a></li>
@@ -21,29 +20,33 @@
             <img src="/close.svg" class="close" alt="">
         </nav>
     </header>
-    <main> 
-        <div class="contact">
-            <div class="form__container">
-                <h2 class="title">Contact me</h2>
-              <form
-                method="post"
-                action="https://getform.io/f/a0fef8da-400e-498b-b93e-9e8a22521edf">
-                <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" class="vards" id="name" name="name" required />
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" class="vards" id="email" name="email" required />
-                </div>
-                <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit">Submit</button>
-              </form>
+    <main>
+
+
+      <div class="contact" id="contact">
+        <div class="form__container">
+
+          <form
+            id="contact-form"
+            method="post"
+            action="https://api.getform.io/v1/forms/a0fef8da-400e-498b-b93e-9e8a22521edf?token=qNOvOP6XMIF1W2UJrOT9NqCf1eNH7To85hKgLTPwM4kUSM9mtHjr8w58CgyC">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" class="mans" required />
             </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" class="mans" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
         </div>
+    </div>
     </main>
+    <footer></footer>
 </body>
-</html>
+</html
