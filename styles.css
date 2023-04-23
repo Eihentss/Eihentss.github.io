@@ -4,116 +4,177 @@
     font-family: sans-serif;
 }
 
-.lapa {
-    animation: color 60s infinite linear;
-    text-align: center;
+
+body{
+    background-image: url(/sakums.png);
+    background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
-    background-color: #d4dae6;
-    position: relative;
+    background-size: cover;
 }
 
-.lapas {
-    text-align: center;
-    width: 100%;
-    height: 100vh;
-    background-color: #7f8daa;
-    position: relative;
+header {
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 50px;
+    background-color: rgb(12, 2, 32);
+    width: 100vw;
+    z-index: 10;
 }
 
 nav{
+    cursor: pointer;
+}
+main{
+    margin: 80px;
+}
+
+ul {
     display: flex;
-    width: 84%;
-    margin: auto;
-    padding: 20px 0;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-left: 0;
+    background-color: #801b1b04;
 }
 
-nav ul li {
-    display: inline-block;
+li {
     list-style: none;
-    margin: 10px 20px;
+    display: flex;
 }
 
-nav ul li a{
+a {
     text-decoration: none;
-    color: #000;
+    color: white;
+}
+
+.form__container {
+    margin: 0px auto;
+    max-width: 1000px;
+    padding: 70px;
+    background-color: #454950;
+    border-radius: 200px;
+}
+  
+.title{
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 0px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+  
+label {
     font-weight: bold;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
 }
 
-nav ul li a:hover{
-    color: red;
+input,textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
 }
-
-
-
-.numurs{
-    margin-left: -55%;
-    margin-top: 29px;
-    margin: 0px;
+  
+textarea {
+    display: flex;
+    height: 130px;
+    width: auto;
 }
-
-.contact {
-    background-color: #7f8daa;
+  
+button {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  .form__container {
-    margin: 50px auto;
-    max-width: 900px;
-    padding: 20px;
-    background-color: #7a7575;
-    border-radius: 20px;
-
-  }
-  
-  .form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-  }
-  
-  label {
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: white;
-  }
-  
-  input,textarea {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #f5f5f5;
-    color: black;
-  }
-  
-  textarea {
-    height: 150px;
-    width: 650px;
-  }
-  
-  #contact-form > button {
-    width: 100%;
+    text-transform: capitalize;
+    width: 220px;
     height: 50px;
-    background-color: #7a7575;
-    color: #fff;
-    border: 2px solid white;
-    border-radius: 10px;
+    background-color: #3d3434;
+    color: #fafafa;
+    border: 2px solid rgb(34, 32, 32);
+    border-radius: 120px;
     cursor: pointer;
-    transition: all 0.3s ease;
-  }
+}
   
-  #contact-form > button:hover {
-    background-color: #1a17189f;
-  }
-  
-.contactme{
-  color: white;
-  margin-bottom: 1rem;
-  text-align: center;
-  font-size: 2rem;
+button:hover {
+    background-color: #161616;
+}
+
+
+img {
+    display: none;
+}
+.mans {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 42px;
+    height: 42px;
+    opacity: 0.0;
+    z-index: 10;
+}
+
+.close{
+    transform: scale(0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s;
+}
+
+
+.mans:hover {
+    cursor: pointer;
+}
+@media (max-width: 400px) {
+    img{
+        display: block;
+    }
+    ul{
+        position: absolute;
+        top: 40px;
+        left: 400px;
+        background-color: rgba(0, 0, 0, 0.315);
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        height: 100px;
+        align-items: center;
+        transition: left 0.8s;
+    }
+    .mans:checked ~ .close{
+        transform: scale(1) rotate(180deg);
+    }   
+    .menu{
+        transform: scale(1);
+        transition: transform 0.5s;
+    }
+    .mans:checked ~ .menu{
+        transform: scale(0) rotate(180deg);
+    }
+    
+    .mans:checked + ul {
+        top:40px;
+        left: 0;
+    }
+
+    .mans {
+        display: block;
+    }
+}
+
+.vards{
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
 }
